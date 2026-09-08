@@ -17,3 +17,9 @@ npm run dev
 4. The included workflow will build and publish the site automatically.
 
 The contact form opens WhatsApp with the visitor's entered details. Replace the placeholder phone number, email, address, founder details, product specifications, and generated concept images before publishing.
+
+## Domains
+
+Use `fcdods.com` as the primary GitHub Pages custom domain. In GoDaddy, point the root `@` to GitHub Pages using its four official A records and point `www` to `salonisingla50.github.io` with a CNAME record.
+
+Use GoDaddy Domain Forwarding to permanently redirect `fcdods.co.in` and `www.fcdods.co.in` to `https://fcdods.com`. GitHub Pages accepts one apex custom domain per site, so the second domain should redirect to the primary one.
