@@ -1,0 +1,53 @@
+#google_translate_element {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  left: -9999px;
+  top: -9999px;
+}
+
+.language-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 6px 9px;
+}
+
+.language-label > span {
+  color: #888;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.language-label select {
+  max-width: 120px;
+  border: 0;
+  outline: 0;
+  background: #fff;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-icon { display: none !important; }
+
+body { top: 0 !important; }
+
+.map-placeholder iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 800px) {
+  .language-label > span { display: none; }
+  .language-label { padding: 7px 5px; }
+  .language-label select { max-width: 88px; }
+}
