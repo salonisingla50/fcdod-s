@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ArrowRight, BadgeCheck, CalendarDays, Check, Factory, Gauge, Leaf, MapPin, Menu, MessageCircle, Phone, ShieldCheck, Sparkles, Wrench, X } from 'lucide-react';
 import './styles.css';
 import './overrides.css';
+import './logo.css';
 
 const nav=[['Home','होम','home'],['About','हमारे बारे में','about'],['Products','उत्पाद','products'],['Gallery & News','गैलरी और समाचार','gallery'],['Contact','संपर्क','contact']];
 const languages=[
@@ -16,7 +17,7 @@ en:{heroTag:'Power for work. Machines for growth.',heroTitle:'Built to keep Indi
 hi:{heroTag:'काम के लिए शक्ति। विकास के लिए मशीनें।',heroTitle:'भारत को आगे बढ़ाने के लिए निर्मित।',heroText:'कठिन काम के लिए भरोसेमंद जनरेटर और चारा काटने की मशीनें।',explore:'उत्पाद देखें',quote:'कीमत पूछें',made:'भारत में निर्मित',tested:'गुणवत्ता जाँची गई',service:'सर्विस सहायता',products:'हम क्या बनाते हैं',productsSub:'दो उत्पाद श्रेणियाँ। एक भरोसेमंद नाम।',gen:'जनरेटर',genText:'खेत, व्यापार और उद्योग के लिए भरोसेमंद बिजली।',chaff:'चारा काटने की मशीन',chaffText:'हर आकार के पशुपालक के लिए तेज़ और समान कटाई।',view:'पूरी रेंज देखें',why:"F.C. DOD's क्यों",whyTitle:'आपके काम को ध्यान में रखकर निर्मित',whyText:'चलाने में आसान। सर्विस में सरल। खेत के लिए तैयार।',p1:'प्रदर्शन पहले',p1t:'हर दिन भरोसेमंद काम के लिए निर्मित।',p2:'डिस्पैच से पहले जाँच',p2t:'हर मशीन भेजने से पहले जाँची जाती है।',p3:'भारतीय परिस्थितियों के लिए',p3t:'असली कार्य परिस्थितियों के लिए व्यावहारिक मशीनें।'}};
 
 function go(page){window.location.hash=page==='home'?'#/':`#/${page}`;window.scrollTo({top:0,behavior:'smooth'});}
-function Logo(){return <button className="logo" onClick={()=>go('home')} aria-label="F.C. DOD's home"><span className="logo-mark">FC</span><span><b>F.C. DOD&apos;s</b><small>POWER &amp; AGRI MACHINERY</small></span></button>;}
+function Logo(){return <button className="logo" onClick={()=>go('home')} aria-label="F.C. DOD's home"><img src="./fcdods-logo.jpg" alt="F.C. DOD's — established 1978, ISO 9001:2015 certified"/></button>;}
 function Header({page}){
   const[open,setOpen]=useState(false);
   useEffect(()=>{

@@ -1,0 +1,19 @@
+.logo img {
+  display: block;
+  width: 170px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.site-footer .logo {
+  align-self: start;
+  background: #fff;
+  padding: 4px 7px;
+}
+
+.site-footer .logo img { width: 190px; }
+
+@media (max-width: 800px) {
+  .logo img { width: 138px; }
+  .site-footer .logo img { width: 170px; }
+}
