@@ -1,0 +1,14 @@
+# F.C. DOD's permits search engines and AI search crawlers to index public pages.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://fcdods.com/sitemap.xml
